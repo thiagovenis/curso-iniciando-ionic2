@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { Platform, MenuController } from 'ionic-angular';
+import { Platform, MenuController} from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
 import { MenuTestPage } from '../pages/menu-test/menu-test';
+import { GeneratedTestPage } from '../pages/generated-test/generated-test';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,7 +26,8 @@ export class MyApp {
 
     this.pages = [
       {component: HomePage, title: 'Home', icon: 'home'},
-      {component: MenuTestPage, title: 'Menu', icon: 'menu'}
+      {component: MenuTestPage, title: 'Menu', icon: 'menu'},
+      {component: GeneratedTestPage, title: 'Generated Page', icon: 'home'}
     ];
   }
 
